@@ -19,25 +19,25 @@ struct HomeView: View {
         TabView {
             DashboardView()
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(.home)
                 }
                 .tag(Tab.dashboard)
             
             TrailersView()
                 .tabItem {
-                    Image(systemName: "play.square.stack")
+                    Image(.playlist)
                 }
                 .tag(Tab.reels)
 
             Text("Notifications")
                 .tabItem {
-                    Image(systemName: "bell")
+                    Image(.notification)
                 }
                 .tag(Tab.dashboard)
 
             Text("Profile")
                 .tabItem {
-                    Image(systemName: "person")
+                    Image(.user)
                 }
                 .tag(Tab.dashboard)
         }
